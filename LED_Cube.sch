@@ -9677,9 +9677,9 @@ grid 2.54 mm</description>
 <label x="81.28" y="55.88" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="Q2" gate="G$1" pin="G"/>
-<wire x1="-83.82" y1="5.08" x2="-86.36" y2="5.08" width="0.1524" layer="91"/>
-<label x="-86.36" y="5.08" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="Q3" gate="G$1" pin="G"/>
+<wire x1="-48.26" y1="5.08" x2="-50.8" y2="5.08" width="0.1524" layer="91"/>
+<label x="-50.8" y="5.08" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="LAYER3_OFF" class="0">
@@ -9689,9 +9689,9 @@ grid 2.54 mm</description>
 <label x="81.28" y="53.34" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="Q3" gate="G$1" pin="G"/>
-<wire x1="-48.26" y1="5.08" x2="-50.8" y2="5.08" width="0.1524" layer="91"/>
-<label x="-50.8" y="5.08" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="Q2" gate="G$1" pin="G"/>
+<wire x1="-83.82" y1="5.08" x2="-86.36" y2="5.08" width="0.1524" layer="91"/>
+<label x="-86.36" y="5.08" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$44" class="0">
