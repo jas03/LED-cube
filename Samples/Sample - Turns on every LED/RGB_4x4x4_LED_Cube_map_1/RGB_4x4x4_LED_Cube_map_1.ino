@@ -8,9 +8,9 @@
 
 #include "Tlc5940.h"
 
-#define LayerOne 6 //PD6 (pin 11 of chip)
-#define LayerTwo 7 //PD7 (pin 12 of chip)
-#define LayerThree 8 //PB0 (pin 13 of chip)
+#define LayerOne 6  // 17 //PD6 (pin 11 of chip)
+#define LayerTwo 7     //  18 //PD7 (pin 12 of chip)
+#define LayerThree 8    //   19 //PB0 (pin 13 of chip)
 
 void setup()
 {
@@ -20,21 +20,21 @@ void setup()
   pinMode(LayerTwo, OUTPUT);
   pinMode(LayerThree, OUTPUT);
   
-  Tlc.init(10);
+  Tlc.init();
 
-  digitalWrite(LayerOne, LOW);
+  digitalWrite(LayerOne, HIGH);
   digitalWrite(LayerTwo, HIGH);
-  digitalWrite(LayerThree, HIGH); 
+  digitalWrite(LayerThree, LOW); 
 }
 
 
-Tlc.set(26,0);
 void loop(){
-for(int i = 0; i <=26; i++){
-  Tlc.set(i, 4000);
+for(int i = 0; i <=28; i++){
+  Tlc.set(i, 1000);
   if(i>=1)  Tlc.set(i-1, 10);
   Tlc.update();
-  delay(500);
+  delay(100);
+
 
 }
   
