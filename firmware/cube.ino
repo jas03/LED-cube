@@ -24,6 +24,10 @@
 #define LYR3       2
 
 
+//Vars
+int audio[7]    //7 byte array for audio data
+
+
 //Code
 void setup(){
 
@@ -47,6 +51,7 @@ void setup(){
 void loop(){
 
     //Check audio
+    checkMSG();
 
     //Set Layer 1
     setLayer(LYR1);
@@ -68,7 +73,7 @@ void loop(){
 //Functions
 
 void setLayer(int lay){
-
+    //Currently uses digitalWrite() which may be too slow
 
     if(lay == LYR1){
 
@@ -94,4 +99,21 @@ void setLayer(int lay){
 
     }
 
+}
+
+void checkMSG(){
+    //Scans each channel and writes out to an array
+
+    //Reset to channel 1
+    digitalWrite(MSG_RST, HIGH);
+    digitalWrite(MSG_RST, LOW);
+
+    for(band=0; band <7; band++)
+    {
+        digitalWrite(MSG_STRBE, LOW);           // strobe pin on the shield - kicks the IC up to the next band
+        delayMicroseconds(30);                  //This needs to be dealt with (interrupts?)
+        left[band] = analogRead(MSG_OUT);       // store left band reading
+
+        digitalWrite(MSG_STRBE, HIGH);
+     }
 }
