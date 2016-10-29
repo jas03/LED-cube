@@ -28,7 +28,16 @@
 void setup(){
 
 
+    digitalWrite(LYR2, HIGH);
+    digitalWrite(LYR3, HIGH);
+    digitalWrite(LYR1, HIGH);
 
+
+
+    //Pin Setup
+
+    //System Initialization
+    digitalWrite(TLC_BLANK, HIGH);
 
 
 
@@ -37,11 +46,52 @@ void setup(){
 
 void loop(){
 
+    //Check audio
 
+    //Set Layer 1
+    setLayer(LYR1);
 
+    //Output pattern for layer 1
 
+    //Set Layer 2
+    setLayer(LYR2);
+
+    //Output pattern for layer 2
+
+    //Set Layer 3
+    setLayer(LYR3);
+
+    //Output pattern for layer 3
 
 }
 
 //Functions
 
+void setLayer(int lay){
+
+
+    if(lay == LYR1){
+
+        digitalWrite(LYR2, HIGH);
+        digitalWrite(LYR3, HIGH);
+        digitalWrite(LYR1, LOW);
+
+    }
+
+    if(lay == LYR2){
+
+        digitalWrite(LYR1, HIGH);
+        digitalWrite(LYR3, HIGH);
+        digitalWrite(LYR2, LOW);
+
+    }
+
+    if(lay == LYR3){
+
+        digitalWrite(LYR2, HIGH);
+        digitalWrite(LYR1, HIGH);
+        digitalWrite(LYR3, LOW);
+
+    }
+
+}
