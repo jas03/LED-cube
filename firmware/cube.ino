@@ -39,13 +39,23 @@ void setup(){
 
 
     //Pin Setup
+    pinMode(TLC_SIN, OUTPUT);
+    pinMode(TLC_SCLK, OUTPUT);
+    pinMode(TLC_GSCLK, OUTPUT);
+    pinMode(TLC_XLAT, OUTPUT);
+    pinMode(TLC_BLANK, OUTPUT);
+    pinMode(TLC_VPRG, OUTPUT);
+
+    pinMode(MSG_RST, OUTPUT);
+    pinMode(MSG_STRBE, OUTPUT);
+   
 
     //System Initialization
     digitalWrite(TLC_BLANK, HIGH);
 
-
-
 }
+
+
 
 
 void loop(){
@@ -108,7 +118,7 @@ void checkMSG(){
     digitalWrite(MSG_RST, HIGH);
     digitalWrite(MSG_RST, LOW);
 
-    for(band=0; band <7; band++)
+    for(int band=0; band <7; band++)
     {
         digitalWrite(MSG_STRBE, LOW);           // strobe pin on the shield - kicks the IC up to the next band
         delayMicroseconds(30);                  //This needs to be dealt with (interrupts?)
