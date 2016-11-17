@@ -151,12 +151,12 @@
 <text x="16.256" y="10.922" size="1.27" layer="25" ratio="1">GREEN</text>
 <text x="45.212" y="16.256" size="1.27" layer="25" ratio="1" rot="R90">BLUE</text>
 <text x="5.842" y="30.48" size="1.27" layer="25" ratio="1" rot="R90">1</text>
-<text x="6.096" y="11.176" size="1.27" layer="25" ratio="1" rot="R90">9</text>
+<text x="5.842" y="10.922" size="1.27" layer="25" ratio="1" rot="R90">9</text>
 <text x="7.874" y="10.922" size="1.27" layer="25" ratio="1">11</text>
 <text x="27.94" y="10.922" size="1.27" layer="25" ratio="1">19</text>
 <text x="45.212" y="8.382" size="1.27" layer="25" ratio="1" rot="R90">21</text>
 <text x="45.466" y="28.448" size="1.27" layer="25" ratio="1" rot="R90">29</text>
-<text x="41.402" y="7.366" size="1.016" layer="25" ratio="1" rot="R90">LED-Cube
+<text x="42.672" y="7.366" size="1.016" layer="25" ratio="1" distance="48" rot="R90">LED-Cube
 2016 Practicum T02
 Evan Yand, Matthew Konyndyk,
 Jasjit Singh, Alex Mendez</text>
@@ -2308,7 +2308,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="23.6474" y="29.2862" size="1.27" layer="27"/>
 </element>
 <element name="C6" library="rcl" package="C0402" value=".15uF" x="26.162" y="43.942" smashed="yes">
-<attribute name="NAME" x="25.527" y="44.577" size="1.27" layer="25"/>
+<attribute name="NAME" x="26.797" y="44.831" size="1.27" layer="25"/>
 <attribute name="VALUE" x="25.527" y="42.037" size="1.27" layer="27"/>
 </element>
 <element name="IC1" library="msgeq7" package="SOIC8" value="MSGEQ7SOIC" x="37.084" y="50.8" smashed="yes" rot="R270">
@@ -2316,11 +2316,9 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="36.068" y="46.736" size="1.27" layer="25"/>
 </element>
 <element name="JP6" library="pinhead" package="1X03" value="LED_SUPPLY" x="4.826" y="70.0532" smashed="yes">
-<attribute name="NAME" x="0.9398" y="71.882" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="1.016" y="66.8782" size="1.27" layer="27"/>
 </element>
 <element name="JP2" library="pinhead" package="1X06" value="SERIAL" x="47.2948" y="41.9862" smashed="yes" rot="R270">
-<attribute name="NAME" x="49.1236" y="49.6824" size="1.27" layer="25" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="44.1198" y="49.6062" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="JP1" library="pinhead" package="2X03" value="SPI" x="36.322" y="30.226" smashed="yes">
@@ -2339,7 +2337,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="14.224" y="57.658" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="Q4" library="transistor-power" package="TO220BV" value="IRF9530" x="17.1196" y="62.992" smashed="yes" rot="R90">
-<attribute name="NAME" x="23.1648" y="57.912" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="NAME" x="16.5608" y="64.77" size="1.27" layer="25" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="24.7396" y="57.912" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="Q2" library="transistor-power" package="TO220BV" value="IRF9530" x="6.604" y="50.8" smashed="yes" rot="R90">
@@ -2395,7 +2393,7 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="U3" library="SparkFun-DigitalIC" package="QFN-32" value="TLC5940-RHB" x="29.5148" y="20.574" smashed="yes" rot="R270">
 <attribute name="PROD_ID" value="IC-10398" x="29.5148" y="20.574" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="31.0388" y="21.844" size="1.27" layer="25" rot="R270"/>
+<attribute name="NAME" x="26.416" y="15.7988" size="1.27" layer="25"/>
 <attribute name="VALUE" x="27.6098" y="21.844" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="X1" library="con-lumberg" package="1503_02" value="1503_02" x="30.7594" y="72.644" smashed="yes">
@@ -2439,7 +2437,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="9.652" y="63.373" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="R10" library="rcl" package="R0805" value="1k" x="22.9108" y="62.8904" smashed="yes" rot="R270">
-<attribute name="NAME" x="24.1808" y="63.5254" size="1.27" layer="25" rot="R270"/>
+<attribute name="NAME" x="24.1808" y="65.8114" size="1.27" layer="25" rot="R270"/>
 <attribute name="VALUE" x="20.3708" y="63.5254" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="J1" library="SparkFun-Connectors" package="POWER_JACK_PTH" value="POWER_JACKPTH" x="-3.048" y="39.1668" smashed="yes" rot="R270">
@@ -2463,7 +2461,10 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="NAME" x="19.685" y="18.161" size="0.6096" layer="25" rot="R180"/>
 <attribute name="VALUE" x="18.415" y="20.701" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="R14" library="rcl" package="R0402" value="0" x="13.97" y="26.416" rot="R270"/>
+<element name="R14" library="rcl" package="R0402" value="0" x="13.97" y="26.416" smashed="yes" rot="R270">
+<attribute name="NAME" x="12.065" y="28.321" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="12.065" y="27.051" size="1.27" layer="27" rot="R270"/>
+</element>
 </elements>
 <signals>
 <signal name="+5V">
